@@ -1,13 +1,11 @@
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { landingReducer } from "./landing";
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import { homeReducer, HomeReducerState } from './home';
 
 interface AppStore {
-    landing: {
-        value: number;
-    }
+  home: HomeReducerState;
 }
 
-const rootReducer = combineReducers({ landing: landingReducer });
+const rootReducer = combineReducers({ home: homeReducer });
 
 const store = configureStore({
   reducer: rootReducer,

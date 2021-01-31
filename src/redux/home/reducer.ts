@@ -1,7 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
-const landingSlice = createSlice({
-  name: "Landing",
+const homeSlice = createSlice({
+  name: 'Home',
   initialState: {
     value: 0,
   },
@@ -15,7 +15,7 @@ const landingSlice = createSlice({
   },
 });
 
-const { incremented, decremented } = landingSlice.actions;
-const { reducer } = landingSlice;
+const { incremented, decremented } = homeSlice.actions;
+const { reducer } = homeSlice;
 
 export { incremented, decremented, reducer };
